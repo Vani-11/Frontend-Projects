@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+    <!--My CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>Nostra E-commerce Website</title>
+</head>
+<body>
+     <!--Navbar-->   
+     <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collections.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+               <i class="fa-solid  fa-bars"></i>
+        </div>
+     </nav>
+        
+     <!--Side Navbar-->
+     <div class="side-navbar">
+        <p style="text-align:right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+         <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collections.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+     </div>
+
+    <!--Contact Us-->
+    <div class="contact-form">
+        <form class="input-box">
+            <h2>Contact Us</h2>
+           <div class="get-input"><input type="text" placeholder="Name" required></div>
+           <div><input type="text" placeholder="Email" required></div>
+           <div><input type="number" placeholder="Mobile Number" required></div>
+           <div><textarea name="message" id="message"  rows="4" placeholder="Message"></textarea></div>
+             <div>
+               <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+  <!--Footer-->
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-box-1">
+            <h2 class="headingText">Nostra</h2>
+            <p>Shopping made simple, affordable, and enjoyable — just for you.</p>
+            <div class="footer-icon-container">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            </div>
+        </div>
+    </div>
+    <p>@2025 Nostra.com</p>
+</div>
+</body>
+</html>

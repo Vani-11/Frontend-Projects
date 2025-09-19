@@ -1,0 +1,53 @@
+form h2{
+    text-align: left;
+    color: #F2F4F7;
+    font-weight:800 ;
+    margin-bottom: 10px;
+}
+
+.contact-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+}
+
+.input-box{
+    background-color: #1D232C;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    border-radius: 10px;
+    align-items: left;
+    justify-content: left;
+    max-width: 600px;
+}
+
+
+form input,textarea{
+    width:90%;
+    border: none;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background:white;
+    font-size: 16px;
+}
+
+form button{
+        background-color: #2563eb;
+        color: white;
+        padding: 12px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s ease;
+}
+
+
