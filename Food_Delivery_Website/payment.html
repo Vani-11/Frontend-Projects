@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment - Suvai</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { font-family: "Poppins", sans-serif; background:#fbfbfb; padding:36px; color:#222; }
+    .wrap { max-width:900px; margin: auto; display:grid; grid-template-columns: 1fr 380px; gap:18px; }
+    .card { background:#fff; padding:18px; border-radius:12px; box-shadow: 0 6px 18px rgba(0,0,0,0.04); }
+    h2 { color:#00b35a; margin-top:0; }
+    .summary-item { display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px dashed #eee; }
+    .payment-methods { display:flex; flex-direction:column; gap:10px; margin-top:8px; }
+    .pm { padding:12px; border-radius:8px; border:1px solid #eee; cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
+    .pm.active { border-color:#00b35a; box-shadow: 0 4px 12px rgba(0,179,90,0.06); }
+    .btn-pay { width:100%; padding:12px; border:none; background:#00b35a; color:white; border-radius:8px; font-size:16px; cursor:pointer; margin-top:12px; }
+    .btn-pay:disabled { opacity:0.6; cursor:not-allowed; }
+    .small { font-size:0.9rem; color:#666; }
+    .method-fields { margin-top:10px; }
+    .method-fields input { width:100%; padding:10px; margin-top:8px; border-radius:6px; border:1px solid #ddd; }
+    @media (max-width:900px){ .wrap { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- left: Payment options -->
+    <div class="card">
+      <h2>Payment</h2>
+      <p class="small">Choose a payment method for your order</p>
+
+      <div class="payment-methods" id="methods">
+        <div class="pm" data-method="UPI">UPI (Google Pay / PhonePe) <span class="small">Fast</span></div>
+        <div class="pm" data-method="CARD">Debit / Credit Card <span class="small">Secure</span></div>
+        <div class="pm" data-method="NETBANK">Net Banking <span class="small">Reliable</span></div>
+        <div class="pm" data-method="COD">Cash on Delivery <span class="small">Pay on delivery</span></div>
+      </div>
+
+      <div class="method-fields" id="methodFields"></div>
+
+      <button id="payBtn" class="btn-pay" disabled>Pay Now</button>
+      <p class="small" style="margin-top:8px;">(This is a demo — payment is simulated.)</p>
+    </div>
+
+    <!-- right: Order summary -->
+    <div class="card">
+      <h2>Order Summary</h2>
+      <div id="summaryList"></div>
+      <div style="margin-top:12px;">
+        <div class="summary-item"><strong>Sub total</strong><span id="subTotal">₹0</span></div>
+        <div class="summary-item"><strong>Delivery</strong><span id="delivery">₹20</span></div>
+        <div class="summary-item"><strong>Discount</strong><span id="discount">₹0</span></div>
+        <div class="summary-item"><strong>Grand Total</strong><strong id="grandTotal">₹0</strong></div>
+      </div>
+      <a href="orders.html" class="small" style="display:inline-block; margin-top:12px;">← Edit cart</a>
+    </div>
+  </div>
+
+  <script src="payment.js"></script>
+</body>
+</html>

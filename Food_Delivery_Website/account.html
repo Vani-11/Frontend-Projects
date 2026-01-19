@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account - Suvai</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <div class="account-container">
+    <h2><i class="fas fa-user-circle"></i> My Account</h2>
+
+    <form id="accountForm">
+      <div class="input-group">
+        <label for="name"><i class="fas fa-user"></i> Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-group">
+        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-group">
+        <label for="phone"><i class="fas fa-phone-alt"></i> Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+
+      <div class="input-group">
+         <label for="address"><i class="fas fa-map-marker-alt"></i> Address</label>
+        <input type="text" id="address" name="address" placeholder="Enter your delivery address" required>
+      </div>
+
+
+      <button type="submit" class="btn">Save Details</button>
+    </form>
+
+    <p class="message" id="successMessage"> Your details have been saved successfully!</p>
+
+    <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+  </div>
+
+  <script src="account.js"></script>
+
+</body>
+</html>
+

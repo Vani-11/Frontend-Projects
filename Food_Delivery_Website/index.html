@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suvai</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+ 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css"
+/>
+
+</head>
+<body>
+  <nav class="navbar" >
+    <div class="logo">Suvai</div>
+
+     <div class="nav-links">
+     <a href="#home" class="nav-link">Home</a>
+     <a href="#special" class="nav-link">Our's Special</a>
+     <a href="#popular" class="nav-link">Popular Dishes</a>
+     <a href="orders.html">Orders</a>
+    </div>
+
+    <div class="nav-icons">
+      <i class="fas fa-user"></i>
+    </div>
+  </nav>
+<!--  Profile dropdown -->
+<div class="profile-dropdown hidden" id="profileDropdown">
+
+  <p style="display: flex; align-items: center; gap: 8px; color: #00b35a;">
+  <i class="fas fa-user-circle"></i>
+  <a href="account.html" style="text-decoration: none; color: #00b35a; font-weight: 600;">My Account</a>
+</p>
+
+<p style="display: flex; align-items: center; gap: 8px; color: #00b35a;">
+  <i class="fas fa-sign-out-alt"></i>
+  <a href="home.html" style="text-decoration: none; color: #00b35a; font-weight: 600;">Logout</a>
+</p>
+
+
+</div>
+
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Experience True Suvai<br>The Authencity Of TamilNadu</h1>
+    <p>Freshly cooked meals inspired by South Indian tradition, delivered straight to your doorstep.</p>
+    <div class="hero-search">
+      <i class="fas fa-search"></i>
+      <input type="text" id="search" placeholder="Search for dishes">
+      <button>Search</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Our Specials Section -->
+<section class="specials" id="special">
+  <h2>Our Specials</h2>
+  <div class="specials-container">
+
+    <div class="special-card">
+      <img src="images/dish1.jpg" alt="Dish 1">
+     
+      <div class="info">
+        <h3>South Indian Thali</h3>
+        <p class="price">₹180</p>
+        <div class="quantity">
+          <button class="minus">−</button>
+          <span class="count">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-cart">Order</button>
+      </div>
+    </div>
+
+    <div class="special-card">
+      <img src="images/dish2.jpg" alt="Dish 2">
+      <div class="overlay"><p>Masala Dosa</p></div>
+      <div class="info">
+        <h3>Masala Dosa</h3>
+        <p class="price">₹90</p>
+        <div class="quantity">
+          <button class="minus">−</button>
+          <span class="count">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-cart">Order</button>
+      </div>
+    </div>
+
+    <div class="special-card">
+      <img src="images/dish3.jpg" alt="Dish 3">
+      <div class="overlay"><p>Paneer Butter Masala</p></div>
+      <div class="info">
+        <h3>Paneer Butter Masala</h3>
+        <p class="price">₹150</p>
+        <div class="quantity">
+          <button class="minus">−</button>
+          <span class="count">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-cart">Order</button>
+      </div>
+    </div>
+
+    <div class="special-card">
+      <img src="images/dish4.jpg" alt="Dish 4">
+      <div class="overlay"><p>Veg Biryani</p></div>
+      <div class="info">
+        <h3>Veg Biryani</h3>
+        <p class="price">₹190</p>
+        <div class="quantity">
+          <button class="minus">−</button>
+          <span class="count">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-cart">Order</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--Popular Dishes Section-->
+<section class="specials" id="popular">
+  <h2>Popular Dishes</h2>
+  <div class="specials-container">
+
+    <div class="special-card">
+      <img src="images/dish5.jpg" alt="Dish 1">
+      <div class="overlay"><p>Idly</p></div>
+      <div class="info">
+        <p class="price">₹50</p>
+        <div class="quantity">
+          <button class="minus">−</button>
+          <span class="count">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-cart">Order</button>
+      </div>
+    </div>
+
+    <div class="special-card">
+      <img src="images/dish6.jpg" alt="Dish 2">
+      <div class="overlay"><p>Vada</p></div>
+      <div class="info">
+        <p class="price">₹60</p>
+        <div class="quantity">
+          <button class="minus">−</button>
+          <span class="count">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-cart">Order</button>
+      </div>
+    </div>
+
+    <div class="special-card">
+      <img src="images/dish7.jpg" alt="Dish 3">
+      <div class="overlay"><p>Poori</p></div>
+      <div class="info">
+        <p class="price">₹70</p>
+        <div class="quantity">
+          <button class="minus">−</button>
+          <span class="count">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-cart">Order</button>
+      </div>
+    </div>
+
+    <div class="special-card">
+      <img src="images/dish8.jpg" alt="Dish 4">
+      <div class="overlay"><p>Veg Pulav</p></div>
+      <div class="info">
+        <p class="price">₹130</p>
+        <div class="quantity">
+          <button class="minus">−</button>
+          <span class="count">1</span>
+          <button class="plus">+</button>
+        </div>
+        <button class="add-cart">Order</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="footer">
+
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: vanisriduraikannan127@gmail.com</li>
+                    <li>Phone: +91 8946010002</li>
+                    <li>Address: 69/2,Gajapathy Street, Shenoy Nagar,Chennai-30.</li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#special">Our's special</a></li>
+                    <li><a href="#popular">Popular dishes</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                    <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+    
+
+        <h1 class="credit">
+            Created By <span><a href="">Vanisri D</a></span> | All rights are reserved
+        </h1>
+    </section>
+<script src="script.js"></script>
+
+</body>
+</html>
