@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  color: #e5e7eb;
+
+ 
+  background: linear-gradient(
+  135deg,
+  #FD5E53,
+  #FF8A5B,
+  #F9C74F
+);
+
+  
+  background-size: 400% 400%;
+  animation: bgMove 18s ease infinite;
+}
+
+
+@keyframes bgMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
